@@ -113,11 +113,12 @@
 
                 // Department filter
                 if (filters.department) {
-                    // Status filter
-                    if (filters.status) {
-                        result = result.filter(item => item.status === filters.status);
-                    }
                     result = result.filter(item => item.department === filters.department);
+                }
+
+                // Status filter
+                if (filters.status) {
+                    result = result.filter(item => item.status === filters.status);
                 }
 
 
